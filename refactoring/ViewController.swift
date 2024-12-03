@@ -61,7 +61,7 @@ final class ViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1 // 1 столбец
+        return 1
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
@@ -73,7 +73,7 @@ final class ViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        if row == 2 { // Если выбран третий раздел
+        if row == 2 {
             let items: [Any] = ["Выбран Раздел 3 "]
             let activityVC = UIActivityViewController(activityItems: items, applicationActivities: nil)
             present(activityVC, animated: true, completion: nil)
